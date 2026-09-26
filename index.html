@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurum Galle — Boutique hotel on the Fort</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#top">AURUM</a>
+    <nav>
+      <a href="#stay">Stay</a>
+      <a href="#dine">Dine</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#book">Reserve</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1800&q=80" alt="Luxury hotel courtyard at dusk" />
+    <div class="hero-copy">
+      <p>Galle Fort, Sri Lanka</p>
+      <h1>A quiet gold hour<br />by the ramparts.</h1>
+      <a class="btn" href="#book">Enquire for dates</a>
+    </div>
+  </section>
+
+  <section class="intro">
+    <p class="eyebrow">The house</p>
+    <h2>Twelve suites. One restored Dutch villa. Breakfast until the ocean breeze says otherwise.</h2>
+    <p>Aurum is a boutique hotel for travellers who want Galle without the rush — linen, courtyard shade, and a table that actually knows local produce.</p>
+  </section>
+
+  <section class="rooms" id="stay">
+    <div class="section-head">
+      <h2>Stay</h2>
+      <p>Suites named for spices that once moved through this port.</p>
+    </div>
+    <div class="room-grid">
+      <article class="room">
+        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=80" alt="Cinnamon suite with four-poster bed" />
+        <div>
+          <h3>Cinnamon Suite</h3>
+          <p>Courtyard view, soaking tub, king bed. From USD 210 / night.</p>
+        </div>
+      </article>
+      <article class="room">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" alt="Cardamom suite terrace" />
+        <div>
+          <h3>Cardamom Terrace</h3>
+          <p>Private terrace, outdoor shower. From USD 260 / night.</p>
+        </div>
+      </article>
+      <article class="room">
+        <img src="https://images.unsplash.com/photo-1578683010236-d716b20d2d6c?auto=format&fit=crop&w=1200&q=80" alt="Clove suite living room" />
+        <div>
+          <h3>Clove Residence</h3>
+          <p>Two-room suite for longer stays. From USD 340 / night.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="dine" id="dine">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80" alt="Fine dining table with candles" />
+    <div>
+      <p class="eyebrow">House kitchen</p>
+      <h2>Dinner is served in the old warehouse.</h2>
+      <p>Set menus change with the catch. Crab curry, hoppers at sunrise, and a short wine list that actually pairs with chilli heat.</p>
+      <ul>
+        <li>Breakfast included for in-house guests</li>
+        <li>Chef’s table — 8 seats, Thursday to Sunday</li>
+        <li>Private courtyard dining on request</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="xp" id="experiences">
+    <h2>Experiences</h2>
+    <div class="xp-grid">
+      <article>
+        <h3>Rampart walk</h3>
+        <p>Sunset route with a historian, ending at the lighthouse.</p>
+      </article>
+      <article>
+        <h3>Spice market</h3>
+        <p>Morning walk to the market, then a cooking hour with the kitchen.</p>
+      </article>
+      <article>
+        <h3>Unawatuna boat</h3>
+        <p>Half-day catamaran, snorkel stop, return before tea.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="book" id="book">
+    <div>
+      <p class="eyebrow">Reservations</p>
+      <h2>Hold a suite.</h2>
+      <p>This is a working demo form — submissions stay on this page so you can show the booking flow in your portfolio.</p>
+    </div>
+    <form id="bookForm">
+      <label>Full name<input name="name" required placeholder="Your name" /></label>
+      <label>Email<input type="email" name="email" required placeholder="you@email.com" /></label>
+      <div class="row">
+        <label>Check-in<input type="date" name="checkin" required /></label>
+        <label>Check-out<input type="date" name="checkout" required /></label>
+      </div>
+      <label>Suite
+        <select name="suite">
+          <option>Cinnamon Suite</option>
+          <option>Cardamom Terrace</option>
+          <option>Clove Residence</option>
+        </select>
+      </label>
+      <label>Guests
+        <select name="guests">
+          <option>1 guest</option>
+          <option selected>2 guests</option>
+          <option>3 guests</option>
+          <option>4 guests</option>
+        </select>
+      </label>
+      <button class="btn dark" type="submit">Request availability</button>
+      <p class="form-msg" id="formMsg" hidden></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>Aurum Galle · Demo hotel website · Portfolio piece</p>
+    <p>Rampart Street, Galle Fort</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
